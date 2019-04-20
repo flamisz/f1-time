@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h1>Country: {{ country }}</h1>
-
+  <div class="bg-white shadow rounded p-4">
     <div class="loading" v-if="loading">
       Loading...
     </div>
@@ -10,8 +8,8 @@
       {{ error }}
     </div>
 
-    <div v-if="race" class="content">
-      <h2>{{ race.title }}</h2>
+    <div v-if="race">
+      <h2 class="text-center mb-4 font-bold">{{ race.title }}</h2>
       <p>{{ qualificationTime }}</p>
       <p>{{ raceTime }}</p>
     </div>

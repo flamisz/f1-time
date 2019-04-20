@@ -1,34 +1,20 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/race/australia">Australia</router-link> |
-      <router-link to="/race/bahrain">Bahrain</router-link> |
-      <router-link to="/race/china">China</router-link> |
-      <router-link to="/race/azerbaijan">Azerbaijan</router-link> |
-      <router-link to="/race/spain">Spain</router-link> |
+  <div class="container mx-auto flex max-w-5xl mt-4">
+    <div class="w-1/4 flex flex-col">
+      <router-link to="/" class="px-2">Home</router-link>
+      <router-link to="/about" class="px-2">About</router-link>
+      <router-link to="/race/australia" class="px-2">Australia</router-link>
+      <router-link to="/race/bahrain" class="px-2">Bahrain</router-link>
+      <router-link to="/race/china" class="px-2">China</router-link>
+      <router-link to="/race/azerbaijan" class="px-2">Azerbaijan</router-link>
+      <router-link to="/race/spain" class="px-2">Spain</router-link>
     </div>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 </style>
