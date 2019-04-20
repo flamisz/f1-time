@@ -16,12 +16,9 @@ const races = {
 }
 
 export function getRace (id, cb) {
-  // fake an API request
-  setTimeout(() => {
-    if (races[id]) {
-      cb(null, races[id])
-    } else {
-      cb(new Error('Race not found.'))
-    }
-  }, 100)
+  if (races[id]) {
+    cb(null, races[id])
+  } else {
+    cb(new Error('Race not found.'))
+  }
 }
