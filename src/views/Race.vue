@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white shadow rounded p-4">
+  <div class="bg-white shadow rounded p-4 m-4">
     <div class="loading" v-if="loading">
       Loading...
     </div>
@@ -9,9 +9,11 @@
     </div>
 
     <div v-if="race">
-      <h2 class="text-center mb-4 font-bold">{{ race.title }}</h2>
-      <p>{{ qualificationTime }}</p>
-      <p>{{ raceTime }}</p>
+      <h2 class="text-center mb-4 text-lg">{{ race.title }}</h2>
+      <div class="">
+        <p>{{ qualificationTime }}</p>
+        <p>{{ raceTime }}</p>
+      </div>
     </div>
   </div>
 </template>
