@@ -12,8 +12,8 @@
 
     <div v-if="race" class="content">
       <h2>{{ race.title }}</h2>
-      <p>{{ race.times.qualification }}</p>
-      <p>{{ race.times.race }}</p>
+      <p>{{ qualificationTime }}</p>
+      <p>{{ raceTime }}</p>
     </div>
   </div>
 </template>
@@ -24,6 +24,7 @@ import { getRace } from '@/races'
 export default {
   name: 'Race',
   props: ['country'],
+
   data () {
     return {
       loading: false,
@@ -31,17 +32,33 @@ export default {
       error: null
     }
   },
+
   created () {
     this.fetchData()
   },
+
   watch: {
     // call again the method if the route changes
     '$route': 'fetchData'
   },
+
+  computed: {
+    qualificationTime: function () {
+      let date = new Date(this.race.times.qualification)
+      return date
+    },
+
+    raceTime: function () {
+      let date = new Date(this.race.times.race)
+      return date
+    },
+  },
+
   methods: {
     fetchData () {
       this.error = this.race = null
       this.loading = true
+
       getRace(this.country, (err, race) => {
         this.loading = false
         if (err) {

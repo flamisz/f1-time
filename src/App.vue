@@ -4,7 +4,10 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/race/australia">Australia</router-link> |
-      <router-link to="/race/other">other</router-link>
+      <router-link to="/race/bahrain">Bahrain</router-link> |
+      <router-link to="/race/china">China</router-link> |
+      <router-link to="/race/azerbaijan">Azerbaijan</router-link> |
+      <router-link to="/race/spain">Spain</router-link> |
     </div>
     <router-view/>
   </div>
