@@ -16,9 +16,7 @@
             Australia
           </router-link>
           <router-link to="/race/bahrain" class="pb-2 hover:text-green-700 flex items-center mr-2 sm:m-0">
-            <svg class="fill-current text-gray-400 w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <path d="M14.66 15.66A8 8 0 1 1 17 10h-2a6 6 0 1 0-1.76 4.24l1.42 1.42zM12 10h8l-4 4-4-4z"/>
-            </svg>
+            <img alt="bahrain" src="./assets/img/bahrain1-sm.png" class="w-4 h-4 mr-1">
             Bahrain
           </router-link>
           <router-link to="/race/china" class="pb-2 hover:text-green-700 flex items-center mr-2 sm:m-0">
