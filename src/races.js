@@ -38,7 +38,7 @@ const races = {
         from: "2019-04-26",
         to: "2019-04-29",
         qualification: "2019-04-27T13:00:00Z",
-        race: "2019-04-14T12:10:00Z"
+        race: "2019-04-28T12:10:00Z"
     },
     tz: "Asia/Baku"
   },
