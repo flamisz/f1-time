@@ -1,29 +1,4 @@
 # f1-time
 
-## Project setup
-```
-yarn install
-```
+Check the times of the races by your local time, track time or any choosen timezone. Default is your localtime but if you choose a timezone, that will be the default until you reset it.
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
