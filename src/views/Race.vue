@@ -73,8 +73,10 @@ export default {
   },
 
   watch: {
-    // call again the method if the route changes
-    '$route': 'fetchData'
+    '$route' () {
+      this.fetchData()
+      this.tz = moment.tz.guess()
+    }
   },
 
   computed: {
