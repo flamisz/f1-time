@@ -6,7 +6,8 @@ const races = {
         to: "2019-03-17",
         qualification: "2019-03-16T05:00:00Z",
         race: "2019-03-17T04:10:00Z"
-    }
+    },
+    tz: "Australia/Melbourne"
   },
 
   'bahrain': {
@@ -16,7 +17,8 @@ const races = {
         to: "2019-03-31",
         qualification: "2019-03-30T14:00:00Z",
         race: "2019-03-31T15:10:00Z"
-    }
+    },
+    tz: "Asia/Bahrain"
   },
 
   'china': {
@@ -26,7 +28,8 @@ const races = {
         to: "2019-04-14",
         qualification: "2019-04-13T06:00:00Z",
         race: "2019-04-14T06:10:00Z"
-    }
+    },
+    tz: "Asia/Shanghai"
   },
 
   'azerbaijan': {
@@ -36,7 +39,8 @@ const races = {
         to: "2019-04-29",
         qualification: "2019-04-27T13:00:00Z",
         race: "2019-04-14T12:10:00Z"
-    }
+    },
+    tz: "Asia/Baku"
   },
 
   'spain': {
@@ -46,7 +50,8 @@ const races = {
         to: "2019-05-12",
         qualification: "2019-05-11T13:00:00Z",
         race: "2019-05-12T13:10:00Z"
-    }
+    },
+    tz: "Europe/Madrid"
   },
 
   'monaco': {
@@ -56,7 +61,8 @@ const races = {
         to: "2019-05-26",
         qualification: "2019-05-25T13:00:00Z",
         race: "2019-05-26T13:10:00Z"
-    }
+    },
+    tz: "Europe/Monaco"
   },
 
   'canada': {
@@ -66,7 +72,8 @@ const races = {
         to: "2019-06-09",
         qualification: "2019-06-08T18:00:00Z",
         race: "2019-06-09T18:10:00Z"
-    }
+    },
+    tz: "America/Montreal",
   },
 }
 

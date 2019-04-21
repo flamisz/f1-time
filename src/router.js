@@ -8,7 +8,7 @@ Vue.use(Router)
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
-  linkExactActiveClass: 'font-bold',
+  linkExactActiveClass: 'text-green-700 font-bold',
   routes: [
     {
       path: '/',
