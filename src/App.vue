@@ -10,13 +10,15 @@
             Home
           </router-link>
           <router-link to="/race/australia" class="pb-2 hover:text-green-700 flex items-center mr-2 sm:m-0">
-            <svg class="fill-current text-gray-400 w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-              <path d="M15 3H7a7 7 0 1 0 0 14h8v-2H7A5 5 0 0 1 7 5h8a3 3 0 0 1 0 6H7a1 1 0 0 1 0-2h8V7H7a3 3 0 1 0 0 6h8a5 5 0 0 0 0-10z"/>
+            <svg class="stroke-current fill-none text-gray-400 w-8 h-8 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M2 9C2 8.66667 2.3 7.5 3.5 5.5L6 5L8 7L7.5 7.5L8.5 9.5L9.5 11H12L12.5 10.5H16L18 12.5L16.5 14.5L15 13.5L14 15L7.5 14V13L2.5 11.5V10.5L2 9Z" />
             </svg>
             Australia
           </router-link>
           <router-link to="/race/bahrain" class="pb-2 hover:text-green-700 flex items-center mr-2 sm:m-0">
-            <img alt="bahrain" src="./assets/img/bahrain1-sm.png" class="w-4 h-4 mr-1">
+            <svg class="stroke-current fill-none text-gray-400 w-8 h-8 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M3.5 12L4.5 5L7.5 7.5L8 8V9.5L10.5 11L10 11.5L6 11L5.5 12L14 12.5L14.5 11.5L14 10.5L12 9.5L11.5 8.5L12.5 6H13L18 14L17 14.5H3L4 13.5L3.5 12Z"/>
+            </svg>
             Bahrain
           </router-link>
           <router-link to="/race/china" class="pb-2 hover:text-green-700 flex items-center mr-2 sm:m-0">
@@ -79,7 +81,16 @@ html {
 }
 
 .active-link svg {
+  stroke: #2f855a !important;
+}
+
+.active-link svg.fill-current {
   fill: #2f855a !important;
+  stroke: none !important;
+}
+
+.fill-none {
+  fill: none;
 }
 @tailwind components;
 @tailwind utilities;
