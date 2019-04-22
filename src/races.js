@@ -77,10 +77,29 @@ const races = {
   },
 }
 
+import moment from 'moment-timezone'
+
 export function getRace (id, cb) {
   if (races[id]) {
     cb(null, races[id])
   } else {
     cb(new Error('Race not found.'))
   }
+}
+
+export function getRaces () {
+  return races
+}
+
+export function nextRace () {
+  let today = moment()
+  let from = ''
+  let race = ''
+  for(race in races) {
+    from = moment(races[race].times.from)
+    if (today.isBefore(from)) {
+      break
+    }
+  }
+  return race
 }
