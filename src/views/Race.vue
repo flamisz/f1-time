@@ -58,16 +58,24 @@
             >Reset</button>
       </div>
     </div>
+
+    <div v-if="circuit">
+      <Results :circuit="circuit"/>
+    </div>
   </div>
 </template>
 
 <script>
 import { getRace } from '@/races'
 import moment from 'moment-timezone'
+import Results from '@/components/Results.vue'
 
 export default {
   name: 'Race',
   props: ['country'],
+  components: {
+    Results
+  },
 
   data () {
     return {
@@ -123,6 +131,10 @@ export default {
         time: date.tz(this.tz).format('h:mm A')
       }
     },
+
+    circuit() {
+      return this.race ? this.race.circuit_id : null
+    }
   },
 
   methods: {

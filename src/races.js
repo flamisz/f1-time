@@ -7,7 +7,8 @@ const races = {
         qualification: "2019-03-16T05:00:00Z",
         race: "2019-03-17T04:10:00Z"
     },
-    tz: "Australia/Melbourne"
+    tz: "Australia/Melbourne",
+    circuit_id: "albert_park"
   },
 
   'bahrain': {
@@ -18,7 +19,8 @@ const races = {
         qualification: "2019-03-30T14:00:00Z",
         race: "2019-03-31T15:10:00Z"
     },
-    tz: "Asia/Bahrain"
+    tz: "Asia/Bahrain",
+    circuit_id: "bahrain"
   },
 
   'china': {
@@ -29,7 +31,8 @@ const races = {
         qualification: "2019-04-13T06:00:00Z",
         race: "2019-04-14T06:10:00Z"
     },
-    tz: "Asia/Shanghai"
+    tz: "Asia/Shanghai",
+    circuit_id: "shanghai"
   },
 
   'azerbaijan': {
@@ -40,7 +43,8 @@ const races = {
         qualification: "2019-04-27T13:00:00Z",
         race: "2019-04-28T12:10:00Z"
     },
-    tz: "Asia/Baku"
+    tz: "Asia/Baku",
+    circuit_id: "BAK"
   },
 
   'spain': {
@@ -51,7 +55,8 @@ const races = {
         qualification: "2019-05-11T13:00:00Z",
         race: "2019-05-12T13:10:00Z"
     },
-    tz: "Europe/Madrid"
+    tz: "Europe/Madrid",
+    circuit_id: "catalunya"
   },
 
   'monaco': {
@@ -62,7 +67,8 @@ const races = {
         qualification: "2019-05-25T13:00:00Z",
         race: "2019-05-26T13:10:00Z"
     },
-    tz: "Europe/Monaco"
+    tz: "Europe/Monaco",
+    circuit_id: "monaco"
   },
 
   'canada': {
@@ -74,6 +80,7 @@ const races = {
         race: "2019-06-09T18:10:00Z"
     },
     tz: "America/Montreal",
+    circuit_id: "villeneuve"
   },
 }
 
