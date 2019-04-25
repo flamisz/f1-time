@@ -1,5 +1,5 @@
 export function getResults (circuit_id, results) {
-    fetch(`http://ergast.com/api/f1/current/circuits/${circuit_id}/results.json`)
+    fetch(`https://ergast.com/api/f1/current/circuits/${circuit_id}/results.json`)
         .then(function(response) {
             return response.json();
         })
