@@ -58,16 +58,24 @@
             >Reset</button>
       </div>
     </div>
+
+    <div v-if="circuit && past">
+      <Results :circuit="circuit"/>
+    </div>
   </div>
 </template>
 
 <script>
 import { getRace } from '@/races'
 import moment from 'moment-timezone'
+import Results from '@/components/Results.vue'
 
 export default {
   name: 'Race',
   props: ['country'],
+  components: {
+    Results
+  },
 
   data () {
     return {
@@ -75,6 +83,7 @@ export default {
       loading: false,
       race: null,
       error: null,
+      past: false,
       localTz: moment.tz.guess(),
       tz: moment.tz.guess(),
       timezones: moment.tz.names()
@@ -123,6 +132,10 @@ export default {
         time: date.tz(this.tz).format('h:mm A')
       }
     },
+
+    circuit() {
+      return this.race ? this.race.circuit_id : null
+    }
   },
 
   methods: {
@@ -136,8 +149,13 @@ export default {
           this.error = err.toString()
         } else {
           this.race = race
+          this.calculateTimes()
         }
       })
+    },
+
+    calculateTimes() {
+      this.past = moment(this.race.times.race).isBefore(moment())
     },
 
     clear () {

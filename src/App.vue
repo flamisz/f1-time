@@ -117,6 +117,30 @@ html {
 .text-xxs {
   font-size: 0.65rem;
 }
+@-webkit-keyframes spin {
+ 0% {
+  -webkit-transform:rotate(0deg);
+  transform:rotate(0deg)
+ }
+ to {
+  -webkit-transform:rotate(1turn);
+  transform:rotate(1turn)
+ }
+}
+@keyframes spin {
+ 0% {
+  -webkit-transform:rotate(0deg);
+  transform:rotate(0deg)
+ }
+ to {
+  -webkit-transform:rotate(1turn);
+  transform:rotate(1turn)
+ }
+}
+.spin {
+ -webkit-animation:spin 2s linear infinite;
+ animation:spin 2s linear infinite
+}
 @tailwind components;
 @tailwind utilities;
 </style>
