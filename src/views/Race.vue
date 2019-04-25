@@ -59,7 +59,7 @@
       </div>
     </div>
 
-    <div v-if="circuit">
+    <div v-if="circuit && past">
       <Results :circuit="circuit"/>
     </div>
   </div>
@@ -83,6 +83,7 @@ export default {
       loading: false,
       race: null,
       error: null,
+      past: false,
       localTz: moment.tz.guess(),
       tz: moment.tz.guess(),
       timezones: moment.tz.names()
@@ -148,8 +149,13 @@ export default {
           this.error = err.toString()
         } else {
           this.race = race
+          this.calculateTimes()
         }
       })
+    },
+
+    calculateTimes() {
+      this.past = moment(this.race.times.race).isBefore(moment())
     },
 
     clear () {
